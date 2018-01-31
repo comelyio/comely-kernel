@@ -8,4 +8,4 @@ Backbone of all Comely components and apps.
 
 ## Installation
 
-`composer require comelyio/comely-engine`
+`composer require comelyio/comely-kernel`
