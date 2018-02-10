@@ -31,7 +31,7 @@ class Comely
      * @param string $name
      * @return string
      */
-    public static function pascalCase(string $name): string
+    public static function PascalCase(string $name): string
     {
         // Return an empty String if input is an empty String
         if (empty($name)) {
@@ -68,7 +68,7 @@ class Comely
      * @param string $name
      * @return string
      */
-    public static function snakeCase(string $name): string
+    public static function snake_case(string $name): string
     {
         // Return an empty String if input is an empty String
         if (empty($name)) {
