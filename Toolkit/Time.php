@@ -59,4 +59,38 @@ class Time
     {
         return round((self::difference($stamp1, $stamp2) / 60) / 60, 1);
     }
+
+    /**
+     * @param string $units
+     * @return int
+     */
+    public static function unitsToSeconds(string $units): int
+    {
+        // Remove all whitespaces
+        $units = preg_replace("/\s/", "", $units);
+
+        $seconds = 0;
+        $matches = [];
+        preg_match_all("/[1-9]+[0-9]*[dhms]/", $units, $matches);
+        $matches = $matches[0] ?? null;
+        if (is_array($matches)) {
+            // Grab all matches
+            $units = [
+                "s" => 1,
+                "m" => 60,
+                "h" => 3600,
+                "d" => 86400
+            ];
+
+            foreach ($matches as $match) {
+                $int = intval(substr($match, 0, -1));
+                $unit = substr($match, -1);
+                if (array_key_exists($unit, $units)) {
+                    $seconds += $int * $units[$unit];
+                }
+            }
+        }
+
+        return $seconds;
+    }
 }
