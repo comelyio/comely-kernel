@@ -15,9 +15,9 @@ declare(strict_types=1);
 namespace Comely\Kernel\Exception;
 
 /**
- * Class ToolsException
+ * Class ToolkitException
  * @package Comely\Kernel\Exception
  */
-class ToolsException extends ComelyException
+class ToolkitException extends ComelyException
 {
 }
