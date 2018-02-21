@@ -22,7 +22,12 @@ class Comely
      */
     public static function baseClassName(string $class): string
     {
-        return substr(strrchr($class, "\\"), 1);
+        $lastOccurrence = strrchr($class, "\\");
+        if (!$lastOccurrence) {
+            return $class;
+        }
+
+        return substr($lastOccurrence, 1);
     }
 
     /**
