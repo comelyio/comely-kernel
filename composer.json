@@ -1,7 +1,13 @@
 {
   "name": "comelyio/comely-kernel",
   "description": "Backbone of all Comely components",
-  "keywords": ["comely-kernel", "comely", "comelyio", "comely.io", "comely2"],
+  "keywords": [
+    "comely-kernel",
+    "comely",
+    "comelyio",
+    "comely.io",
+    "comely2"
+  ],
   "license": "MIT",
   "authors": [
     {
@@ -11,9 +17,6 @@
   ],
   "require": {
     "php": ">=7.1.0"
-  },
-  "suggest": {
-    "ext-fileinfo": "For attachments in Mailer component to work properly"
   },
   "autoload": {
     "psr-4": {
