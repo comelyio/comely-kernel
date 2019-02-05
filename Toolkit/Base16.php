@@ -12,12 +12,3 @@
 
 declare(strict_types=1);
 
-namespace Comely\Kernel\Exception;
-
-/**
- * Class ToolkitException
- * @package Comely\Kernel\Exception
- */
-class ToolkitException extends ComelyException
-{
-}
