@@ -12,6 +12,9 @@
   "require": {
     "php": ">=7.1.0"
   },
+  "suggest": {
+    "ext-fileinfo": "For attachments in Mailer component to work properly"
+  },
   "autoload": {
     "psr-4": {
       "Comely\\Kernel\\": ""
